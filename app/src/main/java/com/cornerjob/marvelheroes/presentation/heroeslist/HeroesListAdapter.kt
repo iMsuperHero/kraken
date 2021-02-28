@@ -1,6 +1,8 @@
 package com.cornerjob.marvelheroes.presentation.heroeslist
 
 import android.content.Context
+import android.content.Intent
+import android.content.res.Resources
 import android.graphics.Bitmap
 import android.view.LayoutInflater
 import android.view.View
@@ -65,9 +67,21 @@ class HeroesListAdapter(val clickListener: Click) : RecyclerView.Adapter<HeroesL
 
                     })
                     .into(heroImage)
-
             heroTitle.text = item.name
             setOnClickListener { clickListener(item, heroImage) }
+
+            itemView.setOnLongClickListener {
+                shareIntent(item.name, item.description)
+                true
+            }
+        }
+
+        fun shareIntent(name: String, description: String) {
+            val shareIntent = Intent()
+            shareIntent.action = Intent.ACTION_SEND
+            shareIntent.type = "text/plain"
+            shareIntent.putExtra(Intent.EXTRA_TEXT, name + description);
+            context.startActivity(Intent.createChooser(shareIntent, context.resources.getString(R.string.action_share)))
         }
 
         fun loadColorsFromBitmap(bitmap: Bitmap) {
@@ -81,5 +95,6 @@ class HeroesListAdapter(val clickListener: Click) : RecyclerView.Adapter<HeroesL
                 }
             }
         }
+
     }
 }

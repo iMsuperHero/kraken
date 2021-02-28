@@ -5,4 +5,19 @@
     <string name="image_transition">imageTransition</string>
     <string name="content_description_hero_detail_image">Hero Detail Image</string>
 
+
+    <string name="action_share">Compartir...</string>
+
+    <string name="dummy_text">Siempre ha sido en convertirme en un experto y maestro de la programación móvil</string>
+    <string name="dummy_text1">En este caso lo he intentado con muchas ganas durante muchas horas pero no ha sido posible.</string>
+    <string name="dummy_text3">Gracias por perder un poco de vuestro tiempo por la entrevista, y por enseñarme que existe un mundo por descubrir.</string>
+    <string name="button_text_previous">Previous</string>
+    <string name="button_text_next">Next</string>
+    <string name="button_cancel">Cancel</string>
+    <string name="button_text_finish">Finish</string>
+
+
+
+    <string name="button_next">next</string>
+
 </resources>

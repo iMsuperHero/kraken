@@ -6,7 +6,7 @@ import com.cornerjob.marvelheroes.presentation.heroeslist.HeroesListActivity
 import dagger.Component
 
 @PerActivity
-@Component(modules = [GetMarvelHeroesListModule::class], dependencies = [])
+@Component(modules = [GetMarvelHeroesListModule::class], dependencies = [ApplicationComponent::class])
 interface GetMarvelHeroesListComponent {
 
     fun inject(marvelListActivity: HeroesListActivity)

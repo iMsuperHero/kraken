@@ -1,6 +1,6 @@
 package com.cornerjob.marvelheroes.di.modules
 
-import com.cornerjob.marvelheroes.data.repository.MarvelHeroesRepositoryImpl
+import com.cornerjob.marvelheroes.domain.repository.MarvelHeroesRepositoryImpl
 import com.cornerjob.marvelheroes.di.scopes.PerActivity
 import com.cornerjob.marvelheroes.domain.usecase.GetMarvelHeroesList
 import com.cornerjob.marvelheroes.presentation.heroeslist.HeroesListActivity

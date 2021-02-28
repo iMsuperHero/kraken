@@ -2,7 +2,7 @@ package com.cornerjob.marvelheroes.di.components
 
 import android.content.Context
 import com.cornerjob.marvelheroes.data.net.MarvelHeroesService
-import com.cornerjob.marvelheroes.data.repository.MarvelHeroesRepositoryImpl
+import com.cornerjob.marvelheroes.domain.repository.MarvelHeroesRepositoryImpl
 import com.cornerjob.marvelheroes.di.modules.ApplicationModule
 import com.cornerjob.marvelheroes.di.modules.DataModule
 import com.cornerjob.marvelheroes.di.modules.NetModule

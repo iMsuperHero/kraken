@@ -1,6 +1,6 @@
 package com.cornerjob.marvelheroes.domain.usecase
 
-import com.cornerjob.marvelheroes.data.repository.MarvelHeroesRepositoryImpl
+import com.cornerjob.marvelheroes.domain.repository.MarvelHeroesRepositoryImpl
 import com.cornerjob.marvelheroes.domain.model.MarvelHeroEntity
 import io.reactivex.Observable
 import javax.inject.Inject
