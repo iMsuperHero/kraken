@@ -1,7 +1,7 @@
-package com.cornerjob.marvelheroes.data.repository
+package com.cornerjob.marvelheroes.domain.repository
 
 import com.cornerjob.marvelheroes.data.model.mapper.MarvelHeroMapper
-import com.cornerjob.marvelheroes.data.repository.datasource.RemoteMarvelHeroesDataSource
+import com.cornerjob.marvelheroes.domain.repository.datasource.RemoteMarvelHeroesDataSource
 import com.cornerjob.marvelheroes.domain.model.MarvelHeroEntity
 import io.reactivex.Observable
 

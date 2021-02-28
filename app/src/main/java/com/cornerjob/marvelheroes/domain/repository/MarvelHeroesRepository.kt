@@ -1,4 +1,4 @@
-package com.cornerjob.marvelheroes.data.repository
+package com.cornerjob.marvelheroes.domain.repository
 
 import com.cornerjob.marvelheroes.domain.model.MarvelHeroEntity
 import io.reactivex.Observable

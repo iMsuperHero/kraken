@@ -1,4 +1,4 @@
-package com.cornerjob.marvelheroes.data.repository.datasource
+package com.cornerjob.marvelheroes.domain.repository.datasource
 
 import com.cornerjob.marvelheroes.data.model.MarvelHeroResponse
 import com.cornerjob.marvelheroes.data.net.MarvelHeroesService

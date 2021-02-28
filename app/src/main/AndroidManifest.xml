@@ -14,13 +14,14 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true"> <!-- This should be use in order to load images from marvel's site -->
 
-        <activity android:name="com.cornerjob.marvelheroes.presentation.heroeslist.HeroesListActivity">
+        <activity android:name="com.cornerjob.marvelheroes.presentation.onboardingscreen.OnBoardingActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name="com.cornerjob.marvelheroes.presentation.heroeslist.HeroesListActivity" />
         <activity android:name="com.cornerjob.marvelheroes.presentation.heroedetail.MarvelHeroDetailActivity" />
     </application>
 
