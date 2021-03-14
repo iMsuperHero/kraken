@@ -1,9 +1,6 @@
 package com.cornerjob.marvelheroes.repository
 
 import com.cornerjob.marvelheroes.data.model.MarvelHeroResponse
-import com.cornerjob.marvelheroes.data.model.mapper.MarvelHeroMapper
-import com.cornerjob.marvelheroes.data.repository.MarvelHeroesRepositoryImpl
-import com.cornerjob.marvelheroes.data.repository.datasource.RemoteMarvelHeroesDataSource
 import com.nhaarman.mockito_kotlin.mock
 import com.nhaarman.mockito_kotlin.verify
 import com.nhaarman.mockito_kotlin.whenever

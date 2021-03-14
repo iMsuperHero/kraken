@@ -1,12 +1,10 @@
 package com.cornerjob.marvelheroes.data.net
 
-import com.cornerjob.marvelheroes.data.model.MarvelDataResponse
-import io.reactivex.Observable
+import com.cornerjob.marvelheroes.domain.model.Heroes
+import retrofit2.Response
 import retrofit2.http.GET
 
 interface MarvelHeroesService {
-
     @GET("characters")
-    fun getMarvelHeroesList(): Observable<MarvelDataResponse>
-
+    suspend fun getHeroes(): Response<Heroes>
 }

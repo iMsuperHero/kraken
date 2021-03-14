@@ -1,0 +1,17 @@
+
+# Kraken App
+
+![Kraken App](./art/kraken.png)
+
+Added:
+
+* MVVM
+* CORRUTINES
+* LIVEDATA
+* HINT
+* CLEAN ARQHUITECTURE
+* ONBOARDING
+* SHARE HERO ON SOCIAL MEDIA
+* REDUCING THE WEIGHT OF THE APP
+
+

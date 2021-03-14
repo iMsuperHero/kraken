@@ -1,6 +1,5 @@
 package com.cornerjob.marvelheroes.usecase
 
-import com.cornerjob.marvelheroes.domain.usecase.UseCase
 import io.reactivex.Observable
 
 class StubUseCase : UseCase<IntArray>() {

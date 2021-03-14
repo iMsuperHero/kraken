@@ -1,8 +1,5 @@
 package com.cornerjob.marvelheroes.presenter
 
-import com.cornerjob.marvelheroes.domain.usecase.GetMarvelHeroesList
-import com.cornerjob.marvelheroes.presentation.heroeslist.HeroesListContract
-import com.cornerjob.marvelheroes.presentation.heroeslist.HeroesListPresenter
 import com.nhaarman.mockito_kotlin.any
 import com.nhaarman.mockito_kotlin.mock
 import com.nhaarman.mockito_kotlin.verify
