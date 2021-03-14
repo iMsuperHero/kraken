@@ -1,10 +1,8 @@
 package com.cornerjob.marvelheroes.domain.repository
 
-import com.cornerjob.marvelheroes.domain.model.MarvelHeroEntity
-import io.reactivex.Observable
+import com.cornerjob.marvelheroes.data.net.MarvelHeroesHelper
+import javax.inject.Inject
 
-interface MarvelHeroesRepository {
-
-    fun getMarvelHeroesList(): Observable<List<MarvelHeroEntity>>
-
+class MarvelMainRepository @Inject constructor(private val apiHelper: MarvelHeroesHelper) {
+    suspend fun getUsers() = apiHelper.getUsers()
 }

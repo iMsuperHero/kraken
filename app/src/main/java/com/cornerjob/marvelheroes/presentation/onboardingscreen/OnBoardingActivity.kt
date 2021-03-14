@@ -9,12 +9,11 @@ import android.view.WindowManager
 import android.widget.Button
 import android.widget.LinearLayout
 import android.widget.TextView
-import android.widget.Toast
 import androidx.core.content.ContextCompat
 import androidx.viewpager.widget.ViewPager
 import com.cornerjob.marvelheroes.R
 import com.cornerjob.marvelheroes.domain.model.Slide
-import com.cornerjob.marvelheroes.presentation.heroeslist.HeroesListActivity
+import com.cornerjob.marvelheroes.presentation.heroeslist.MarvelMainActivity
 import java.util.ArrayList
 
 class OnBoardingActivity : AppCompatActivity() {
@@ -101,7 +100,7 @@ class OnBoardingActivity : AppCompatActivity() {
             current < sliderAdapter.count -> // move to next screen
                 sViewPager.currentItem = current
             current == sliderAdapter.count -> {
-                val intent = Intent(this@OnBoardingActivity, HeroesListActivity::class.java)
+                val intent = Intent(this@OnBoardingActivity, MarvelMainActivity::class.java)
                 startActivity(intent)
                 this.finish()
             }

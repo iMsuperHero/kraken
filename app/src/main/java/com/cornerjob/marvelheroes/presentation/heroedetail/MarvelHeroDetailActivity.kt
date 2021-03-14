@@ -10,11 +10,12 @@ import com.bumptech.glide.load.engine.GlideException
 import com.bumptech.glide.request.RequestListener
 import com.bumptech.glide.request.target.Target
 import com.cornerjob.marvelheroes.R
-import com.cornerjob.marvelheroes.domain.model.MarvelHeroEntity
+import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.android.synthetic.main.activity_hero_detail.*
+import com.cornerjob.marvelheroes.domain.model.Result
 
+@AndroidEntryPoint
 class MarvelHeroDetailActivity : AppCompatActivity() {
-
     companion object {
         const val PARAM_HERO = "hero"
     }
@@ -28,13 +29,13 @@ class MarvelHeroDetailActivity : AppCompatActivity() {
         }
         supportPostponeEnterTransition() // Wait for image load and then draw the animation
 
-        val hero: MarvelHeroEntity? = intent?.extras?.getParcelable(PARAM_HERO)
+        val hero: Result? = intent?.extras?.getParcelable(PARAM_HERO)
         hero?.let { fillHeroData(it) }
     }
 
-    private fun fillHeroData(hero: MarvelHeroEntity) {
+    private fun fillHeroData(hero: Result) {
         Glide.with(this)
-                .load(hero.photoUrl)
+                .load(hero.thumbnail.path + "." + hero.thumbnail.extension)
                 .listener(object : RequestListener<Drawable> {
                     override fun onLoadFailed(e: GlideException?, model: Any?, target: Target<Drawable>?, isFirstResource: Boolean): Boolean {
                         supportStartPostponedEnterTransition()
