@@ -2,7 +2,6 @@ package com.cornerjob.marvelheroes.mapper
 
 import com.cornerjob.marvelheroes.data.model.MarvelHeroResponse
 import com.cornerjob.marvelheroes.data.model.MarvelHeroThumbnail
-import com.cornerjob.marvelheroes.data.model.mapper.MarvelHeroMapper
 import com.cornerjob.marvelheroes.domain.model.MarvelHeroEntity
 import org.assertj.core.api.Assertions
 import org.junit.Before

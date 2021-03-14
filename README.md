@@ -1,0 +1,17 @@
+
+# Kraken App
+
+![alt text](https://ibb.co/DL4v1SY)
+
+Added:
+
+⋅⋅* MVVM
+⋅⋅* CORRUTINES
+⋅⋅* LIVEDATA
+⋅⋅* HINT
+⋅⋅* CLEAN ARQHUITECTURE
+⋅⋅* ONBOARDING
+⋅⋅* SHARE HERO ON SOCIAL MEDIA
+⋅⋅* REDUCING THE WEIGHT OF THE APP
+
+
