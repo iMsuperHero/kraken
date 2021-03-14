@@ -12,7 +12,7 @@ import com.cornerjob.marvelheroes.R
 import com.cornerjob.marvelheroes.domain.model.Slide
 
 
-class SliderAdapter(context: Context, slideItems: List<Slide>) : PagerAdapter(){
+class SliderAdapter(context: Context, slideItems: List<Slide>) : PagerAdapter() {
 
     var mContext = context
 
